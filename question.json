@@ -1,0 +1,12 @@
+{
+	"stem" : "What color is the sky?",
+   "choices" : [
+      { "label" : "A", "text" : "red" },
+      { "label" : "B", "text" : "green" },
+      { "label" : "C", "text" : "blue" }
+   ]
+}
+
+
+
+

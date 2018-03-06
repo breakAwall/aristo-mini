@@ -26,7 +26,7 @@ EXAM_PATHS = [exam for exam in EXAM_DIR.glob('*')]
 EXAM_NAMES = [path.name for path in EXAM_PATHS]
 
 def read_exam(path: pathlib.Path) -> Exam:
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding="utf8") as f:
         questions = [MultipleChoiceQuestion.from_jsonl(line) for line in f]
         name = path.name
 
